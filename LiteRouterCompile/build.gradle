@@ -21,8 +21,8 @@ afterEvaluate {
     publishing {
         repositories {
             maven {
-//                url 'https://jitpack.io'
-                url 'D:\\localRepo'
+                url 'https://jitpack.io'
+//                url 'D:\\localRepo'
             }
         }
         publications {
