@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.ATestActivity" />
+        <activity android:name=".ui.BTestActivity" />
     </application>
 
 </manifest>
