@@ -50,10 +50,10 @@ object LiteRouter {
         return mRouterMap
     }
 
-    fun routeTo(context: Context, path: String) = context.LiteRouteTo(path)
+    fun routeTo(context: Context, path: String) = context.liteRouteTo(path)
 
 
-    fun Context.LiteRouteTo(path: String) {
+    fun Context.liteRouteTo(path: String) {
         val map = checkRouterMapInit()
         if (map == null) {
             LogHelper.tip(TAG, "路由表初始化失败，终止跳转")

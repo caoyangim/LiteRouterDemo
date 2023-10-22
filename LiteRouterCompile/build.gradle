@@ -2,6 +2,7 @@ plugins {
     id 'java-library'
     id 'org.jetbrains.kotlin.jvm'
     id 'kotlin-kapt'
+    id 'maven-publish'
 }
 
 java {
@@ -14,4 +15,22 @@ dependencies {
     kapt 'com.google.auto.service:auto-service:1.0'
     implementation 'com.squareup:kotlinpoet:1.10.2'
     implementation project(":LiteRouterAnno")
+}
+
+afterEvaluate {
+    publishing {
+        repositories {
+            maven {
+                url 'https://jitpack.io'
+//                url 'D:\\localRepo'
+            }
+        }
+        publications {
+            maven(MavenPublication) {
+                groupId = 'com.github.caoyangim'
+                artifactId = 'lietRouter-compile'
+                version = '1.0.0'
+            }
+        }
+    }
 }
