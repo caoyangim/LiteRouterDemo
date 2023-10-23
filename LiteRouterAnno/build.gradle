@@ -25,7 +25,7 @@ afterEvaluate {
             maven(MavenPublication) {
                 groupId = 'com.github.caoyangim'
                 artifactId = 'liteRouter-anno'
-                version = '1.1.1'
+                version = '1.1.2'
                 from components.java
             }
         }
