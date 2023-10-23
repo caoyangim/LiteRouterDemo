@@ -1,5 +1,5 @@
 # LiteRouter
-
+[![](https://jitpack.io/v/caoyangim/LiteRouterDemo.svg)](https://jitpack.io/#caoyangim/LiteRouterDemo)
 ## 依赖
 ``` gradle
 // project build.gradle
